@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Burger Code</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/6a5f3d051e.js"></script>
+
+</head>
+<body>
+    <div class="container site">
+        <h1 class="text-logo">
+            <i class="fas fa-utensils"></i>
+            Burger Code
+            <i class="fas fa-utensils"></i>           
+        </h1>
+<!-- Nav tabs -->
+<ul class="nav nav-pills" id="myTab" role="tablist">
+    <li class="nav-item">
+      <a class="nav-link active" id="menu-tab" data-toggle="tab" href="#menu" role="tab" aria-controls="menu" aria-selected="true">Menu</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" id="Burger-tab" data-toggle="tab" href="#burger" role="tab" aria-controls="Burger" aria-selected="false">Burger</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" id="Snacks-tab" data-toggle="tab" href="#snacks" role="tab" aria-controls="Snacks" aria-selected="false">Snacks</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" id="Salades-tab" data-toggle="tab" href="#salades" role="tab" aria-controls="Salades" aria-selected="false">Salades</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" id="Boissons-tab" data-toggle="tab" href="#boissons" role="tab" aria-controls="Boissons" aria-selected="false">Boissons</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" id="Desserts-tab" data-toggle="tab" href="#desserts" role="tab" aria-controls="Desserts" aria-selected="false">Desserts</a>
+    </li>
+
+  </ul>
+
+  <!-- Tab panes -->
+  <div class="tab-content">
+    <div class="tab-pane active" id="menu" role="tabpanel" aria-labelledby="home-tab">
+    <div class="row">
+        <div class="col-sm-6 col-md-4"> <!-- 1 colone en résolution smatphone, 2 colonnes en résolution tablette, 3 colonnes en résolution desktop  -->
+            <div class="card">
+                <img class="card-img-top" src="images/m1.png" alt="menu classic">
+                <div>8.90€</div>
+                <div class="card-body">
+                    <h5 class="card-title">Menu Classic</h5>
+                    <p class="card-text">Sandwich: Burger, Salade, Tomate, Cornichon + Frites + Boisson</p>
+                    <a href="#" class="btn btn-order" role="button"> 
+                        <i class="fas fa-cart-arrow-down"></i> 
+                        Commander
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 col-md-4"> <!-- 1 colone en résolution smatphone, 2 colonnes en résolution tablette, 3 colonnes en résolution desktop  -->
+            <div class="card">
+                <img class="card-img-top" src="images/m3.png" alt="menu classic">
+                <div>8.90€</div>
+                <div class="card-body">
+                    <h5 class="card-title">Menu Classic</h5>
+                    <p class="card-text">Sandwich: Burger, Salade, Tomate, Cornichon + Frites + Boisson</p>
+                    <a href="#" class="btn btn-order" role="button"> 
+                        <i class="fas fa-cart-arrow-down"></i> 
+                        Commander
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 col-md-4"> <!-- 1 colone en résolution smatphone, 2 colonnes en résolution tablette, 3 colonnes en résolution desktop  -->
+            <div class="card">
+                <img class="card-img-top" src="images/m4.png" alt="menu classic">
+                <div>8.90€</div>
+                <div class="card-body">
+                    <h5 class="card-title">Menu Classic</h5>
+                    <p class="card-text">Sandwich: Burger, Salade, Tomate, Cornichon + Frites + Boisson</p>
+                    <a href="#" class="btn btn-order" role="button"> 
+                        <i class="fas fa-cart-arrow-down"></i> 
+                        Commander
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 col-md-4"> <!-- 1 colone en résolution smatphone, 2 colonnes en résolution tablette, 3 colonnes en résolution desktop  -->
+            <div class="card">
+                <img class="card-img-top" src="images/m5.png" alt="menu classic">
+                <div>8.90€</div>
+                <div class="card-body">
+                    <h5 class="card-title">Menu Classic</h5>
+                    <p class="card-text">Sandwich: Burger, Salade, Tomate, Cornichon + Frites + Boisson</p>
+                    <a href="#" class="btn btn-order" role="button"> 
+                        <i class="fas fa-cart-arrow-down"></i> 
+                        Commander
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 col-md-4"> <!-- 1 colone en résolution smatphone, 2 colonnes en résolution tablette, 3 colonnes en résolution desktop  -->
+            <div class="card">
+                <img class="card-img-top" src="images/m6.png" alt="menu classic">
+                <div>8.90€</div>
+                <div class="card-body">
+                    <h5 class="card-title">Menu Classic</h5>
+                    <p class="card-text">Sandwich: Burger, Salade, Tomate, Cornichon + Frites + Boisson</p>
+                    <a href="#" class="btn btn-order" role="button"> 
+                        <i class="fas fa-cart-arrow-down"></i> 
+                        Commander
+                    </a>
+                </div>
+            </div>
+        </div>   
+
+    </div>
+    </div>
+           
+<!-- //////////////////////////////////////////////////////////////////////////////////////////////////////
+                                                
+                                                BURGER
+                                                
+/////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+<div class="tab-pane" id="burger" role="tabpanel" aria-labelledby="profile-tab">
+    <div class="row">        
+        <div class="col-sm-6 col-md-4"> <!-- 1 colone en résolution smatphone, 2 colonnes en résolution tablette, 3 colonnes en résolution desktop  -->
+            <div class="card">
+                <img class="card-img-top" src="images/b1.png" alt="menu classic">
+                <div>8.90€</div>
+                <div class="card-body">
+                    <h5 class="card-title">Menu Classic</h5>
+                    <p class="card-text">Sandwich: Burger, Salade, Tomate, Cornichon + Frites + Boisson</p>
+                    <a href="#" class="btn btn-order" role="button"> 
+                        <i class="fas fa-cart-arrow-down"></i> 
+                        Commander
+                    </a>
+                </div>
+            </div>
+        </div>
+         <div class="col-sm-6 col-md-4"> <!-- 1 colone en résolution smatphone, 2 colonnes en résolution tablette, 3 colonnes en résolution desktop  -->
+                        <div class="card">
+                            <img class="card-img-top" src="images/b2.png" alt="menu classic">
+                            <div>8.90€</div>
+                            <div class="card-body">
+                                <h5 class="card-title">Menu Classic</h5>
+                                <p class="card-text">Sandwich: Burger, Salade, Tomate, Cornichon + Frites + Boisson</p>
+                                <a href="#" class="btn btn-order" role="button"> 
+                                    <i class="fas fa-cart-arrow-down"></i> 
+                                    Commander
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4"> <!-- 1 colone en résolution smatphone, 2 colonnes en résolution tablette, 3 colonnes en résolution desktop  -->
+                        <div class="card">
+                            <img class="card-img-top" src="images/b3.png" alt="menu classic">
+                            <div>8.90€</div>
+                            <div class="card-body">
+                                <h5 class="card-title">Menu Classic</h5>
+                                <p class="card-text">Sandwich: Burger, Salade, Tomate, Cornichon + Frites + Boisson</p>
+                                <a href="#" class="btn btn-order" role="button"> 
+                                    <i class="fas fa-cart-arrow-down"></i> 
+                                    Commander
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4"> <!-- 1 colone en résolution smatphone, 2 colonnes en résolution tablette, 3 colonnes en résolution desktop  -->
+                        <div class="card">
+                            <img class="card-img-top" src="images/b4.png" alt="menu classic">
+                            <div>8.90€</div>
+                            <div class="card-body">
+                                <h5 class="card-title">Menu Classic</h5>
+                                <p class="card-text">Sandwich: Burger, Salade, Tomate, Cornichon + Frites + Boisson</p>
+                                <a href="#" class="btn btn-order" role="button"> 
+                                    <i class="fas fa-cart-arrow-down"></i> 
+                                    Commander
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4"> <!-- 1 colone en résolution smatphone, 2 colonnes en résolution tablette, 3 colonnes en résolution desktop  -->
+                        <div class="card">
+                            <img class="card-img-top" src="images/b5.png" alt="menu classic">
+                            <div>8.90€</div>
+                            <div class="card-body">
+                                <h5 class="card-title">Menu Classic</h5>
+                                <p class="card-text">Sandwich: Burger, Salade, Tomate, Cornichon + Frites + Boisson</p>
+                                <a href="#" class="btn btn-order" role="button"> 
+                                    <i class="fas fa-cart-arrow-down"></i> 
+                                    Commander
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4"> <!-- 1 colone en résolution smatphone, 2 colonnes en résolution tablette, 3 colonnes en résolution desktop  -->
+                        <div class="card">
+                            <img class="card-img-top" src="images/b6.png" alt="menu classic">
+                            <div>8.90€</div>
+                            <div class="card-body">
+                                <h5 class="card-title">Menu Classic</h5>
+                                <p class="card-text">Sandwich: Burger, Salade, Tomate, Cornichon + Frites + Boisson</p>
+                                <a href="#" class="btn btn-order" role="button"> 
+                                    <i class="fas fa-cart-arrow-down"></i> 
+                                    Commander
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+    </div>
+    </div>
+
+
+
+<!-- //////////////////////////////////////////////////////////////////////////////////////////////////////
+                                                
+                                                SNACKS
+                                                
+/////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+<div class="tab-pane" id="snacks" role="tabpanel" aria-labelledby="messages-tab">
+    <div class="row">
+        <div class="col-sm-6 col-md-4"> <!-- 1 colone en résolution smatphone, 2 colonnes en résolution tablette, 3 colonnes en résolution desktop  -->
+            <div class="card">
+                <img class="card-img-top" src="images/s1.png" alt="menu classic">
+                <div>8.90€</div>
+                <div class="card-body">
+                    <h5 class="card-title">Menu Classic</h5>
+                    <p class="card-text">Sandwich: Burger, Salade, Tomate, Cornichon + Frites + Boisson</p>
+                    <a href="#" class="btn btn-order" role="button"> 
+                        <i class="fas fa-cart-arrow-down"></i> 
+                        Commander
+                    </a>
+                </div>
+            </div>
+        </div>
+<div class="col-sm-6 col-md-4"> <!-- 1 colone en résolution smatphone, 2 colonnes en résolution tablette, 3 colonnes en résolution desktop  -->
+                        <div class="card">
+                            <img class="card-img-top" src="images/s2.png" alt="menu classic">
+                            <div>8.90€</div>
+                            <div class="card-body">
+                                <h5 class="card-title">Menu Classic</h5>
+                                <p class="card-text">Sandwich: Burger, Salade, Tomate, Cornichon + Frites + Boisson</p>
+                                <a href="#" class="btn btn-order" role="button"> 
+                                    <i class="fas fa-cart-arrow-down"></i> 
+                                    Commander
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4"> <!-- 1 colone en résolution smatphone, 2 colonnes en résolution tablette, 3 colonnes en résolution desktop  -->
+                        <div class="card">
+                            <img class="card-img-top" src="images/s3.png" alt="menu classic">
+                            <div>8.90€</div>
+                            <div class="card-body">
+                                <h5 class="card-title">Menu Classic</h5>
+                                <p class="card-text">Sandwich: Burger, Salade, Tomate, Cornichon + Frites + Boisson</p>
+                                <a href="#" class="btn btn-order" role="button"> 
+                                    <i class="fas fa-cart-arrow-down"></i> 
+                                    Commander
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4"> <!-- 1 colone en résolution smatphone, 2 colonnes en résolution tablette, 3 colonnes en résolution desktop  -->
+                        <div class="card">
+                            <img class="card-img-top" src="images/s4.png" alt="menu classic">
+                            <div>8.90€</div>
+                            <div class="card-body">
+                                <h5 class="card-title">Menu Classic</h5>
+                                <p class="card-text">Sandwich: Burger, Salade, Tomate, Cornichon + Frites + Boisson</p>
+                                <a href="#" class="btn btn-order" role="button"> 
+                                    <i class="fas fa-cart-arrow-down"></i> 
+                                    Commander
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4"> <!-- 1 colone en résolution smatphone, 2 colonnes en résolution tablette, 3 colonnes en résolution desktop  -->
+                        <div class="card">
+                            <img class="card-img-top" src="images/s5.png" alt="menu classic">
+                            <div>8.90€</div>
+                            <div class="card-body">
+                                <h5 class="card-title">Menu Classic</h5>
+                                <p class="card-text">Sandwich: Burger, Salade, Tomate, Cornichon + Frites + Boisson</p>
+                                <a href="#" class="btn btn-order" role="button"> 
+                                    <i class="fas fa-cart-arrow-down"></i> 
+                                    Commander
+                                </a>
+                            </div>
+                        </div>
+                    </div>    
+    </div>
+    </div>
+
+<!-- //////////////////////////////////////////////////////////////////////////////////////////////////////
+                                                
+                                                SALADES
+                                                
+/////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+<div class="tab-pane" id="salades" role="tabpanel" aria-labelledby="settings-tab">
+    <div class="row">
+        <div class="col-sm-6 col-md-4"> <!-- 1 colone en résolution smatphone, 2 colonnes en résolution tablette, 3 colonnes en résolution desktop  -->
+            <div class="card">
+                <img class="card-img-top" src="images/sa1.png" alt="menu classic">
+                <div>8.90€</div>
+                <div class="card-body">
+                    <h5 class="card-title">Menu Classic</h5>
+                    <p class="card-text">Sandwich: Burger, Salade, Tomate, Cornichon + Frites + Boisson</p>
+                    <a href="#" class="btn btn-order" role="button"> 
+                        <i class="fas fa-cart-arrow-down"></i> 
+                        Commander
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 col-md-4"> <!-- 1 colone en résolution smatphone, 2 colonnes en résolution tablette, 3 colonnes en résolution desktop  -->
+            <div class="card">
+                <img class="card-img-top" src="images/sa2.png" alt="menu classic">
+                <div>8.90€</div>
+                <div class="card-body">
+                    <h5 class="card-title">Menu Classic</h5>
+                    <p class="card-text">Sandwich: Burger, Salade, Tomate, Cornichon + Frites + Boisson</p>
+                    <a href="#" class="btn btn-order" role="button"> 
+                        <i class="fas fa-cart-arrow-down"></i> 
+                        Commander
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 col-md-4"> <!-- 1 colone en résolution smatphone, 2 colonnes en résolution tablette, 3 colonnes en résolution desktop  -->
+            <div class="card">
+                <img class="card-img-top" src="images/sa3.png" alt="menu classic">
+                <div>8.90€</div>
+                <div class="card-body">
+                    <h5 class="card-title">Menu Classic</h5>
+                    <p class="card-text">Sandwich: Burger, Salade, Tomate, Cornichon + Frites + Boisson</p>
+                    <a href="#" class="btn btn-order" role="button"> 
+                        <i class="fas fa-cart-arrow-down"></i> 
+                        Commander
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 col-md-4"> <!-- 1 colone en résolution smatphone, 2 colonnes en résolution tablette, 3 colonnes en résolution desktop  -->
+            <div class="card">
+                <img class="card-img-top" src="images/sa4.png" alt="menu classic">
+                <div>8.90€</div>
+                <div class="card-body">
+                    <h5 class="card-title">Menu Classic</h5>
+                    <p class="card-text">Sandwich: Burger, Salade, Tomate, Cornichon + Frites + Boisson</p>
+                    <a href="#" class="btn btn-order" role="button"> 
+                        <i class="fas fa-cart-arrow-down"></i> 
+                        Commander
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 col-md-4"> <!-- 1 colone en résolution smatphone, 2 colonnes en résolution tablette, 3 colonnes en résolution desktop  -->
+            <div class="card">
+                <img class="card-img-top" src="images/sa5.png" alt="menu classic">
+                <div>8.90€</div>
+                <div class="card-body">
+                    <h5 class="card-title">Menu Classic</h5>
+                    <p class="card-text">Sandwich: Burger, Salade, Tomate, Cornichon + Frites + Boisson</p>
+                    <a href="#" class="btn btn-order" role="button"> 
+                        <i class="fas fa-cart-arrow-down"></i> 
+                        Commander
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    </div>
+
+<!-- //////////////////////////////////////////////////////////////////////////////////////////////////////
+                                                
+                                                BOISSONS
+                                                
+/////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+<div class="tab-pane" id="boissons" role="tabpanel" aria-labelledby="settings-tab">
+    <div class="row">
+        <div class="col-sm-6 col-md-4"> <!-- 1 colone en résolution smatphone, 2 colonnes en résolution tablette, 3 colonnes en résolution desktop  -->
+            <div class="card">
+                <img class="card-img-top" src="images/bo1.png" alt="menu classic">
+                <div>8.90€</div>
+                <div class="card-body">
+                    <h5 class="card-title">Menu Classic</h5>
+                    <p class="card-text">Sandwich: Burger, Salade, Tomate, Cornichon + Frites + Boisson</p>
+                    <a href="#" class="btn btn-order" role="button"> 
+                        <i class="fas fa-cart-arrow-down"></i> 
+                        Commander
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 col-md-4"> <!-- 1 colone en résolution smatphone, 2 colonnes en résolution tablette, 3 colonnes en résolution desktop  -->
+            <div class="card">
+                <img class="card-img-top" src="images/bo2.png" alt="menu classic">
+                <div>8.90€</div>
+                <div class="card-body">
+                    <h5 class="card-title">Menu Classic</h5>
+                    <p class="card-text">Sandwich: Burger, Salade, Tomate, Cornichon + Frites + Boisson</p>
+                    <a href="#" class="btn btn-order" role="button"> 
+                        <i class="fas fa-cart-arrow-down"></i> 
+                        Commander
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 col-md-4"> <!-- 1 colone en résolution smatphone, 2 colonnes en résolution tablette, 3 colonnes en résolution desktop  -->
+            <div class="card">
+                <img class="card-img-top" src="images/bo3.png" alt="menu classic">
+                <div>8.90€</div>
+                <div class="card-body">
+                    <h5 class="card-title">Menu Classic</h5>
+                    <p class="card-text">Sandwich: Burger, Salade, Tomate, Cornichon + Frites + Boisson</p>
+                    <a href="#" class="btn btn-order" role="button"> 
+                        <i class="fas fa-cart-arrow-down"></i> 
+                        Commander
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 col-md-4"> <!-- 1 colone en résolution smatphone, 2 colonnes en résolution tablette, 3 colonnes en résolution desktop  -->
+            <div class="card">
+                <img class="card-img-top" src="images/bo4.png" alt="menu classic">
+                <div>8.90€</div>
+                <div class="card-body">
+                    <h5 class="card-title">Menu Classic</h5>
+                    <p class="card-text">Sandwich: Burger, Salade, Tomate, Cornichon + Frites + Boisson</p>
+                    <a href="#" class="btn btn-order" role="button"> 
+                        <i class="fas fa-cart-arrow-down"></i> 
+                        Commander
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 col-md-4"> <!-- 1 colone en résolution smatphone, 2 colonnes en résolution tablette, 3 colonnes en résolution desktop  -->
+            <div class="card">
+                <img class="card-img-top" src="images/bo5.png" alt="menu classic">
+                <div>8.90€</div>
+                <div class="card-body">
+                    <h5 class="card-title">Menu Classic</h5>
+                    <p class="card-text">Sandwich: Burger, Salade, Tomate, Cornichon + Frites + Boisson</p>
+                    <a href="#" class="btn btn-order" role="button"> 
+                        <i class="fas fa-cart-arrow-down"></i> 
+                        Commander
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 col-md-4"> <!-- 1 colone en résolution smatphone, 2 colonnes en résolution tablette, 3 colonnes en résolution desktop  -->
+            <div class="card">
+                <img class="card-img-top" src="images/bo6.png" alt="menu classic">
+                <div>8.90€</div>
+                <div class="card-body">
+                    <h5 class="card-title">Menu Classic</h5>
+                    <p class="card-text">Sandwich: Burger, Salade, Tomate, Cornichon + Frites + Boisson</p>
+                    <a href="#" class="btn btn-order" role="button"> 
+                        <i class="fas fa-cart-arrow-down"></i> 
+                        Commander
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    </div>
+
+<!-- //////////////////////////////////////////////////////////////////////////////////////////////////////
+                                                
+                                                DESSERTS
+                                                
+/////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+<div class="tab-pane" id="desserts" role="tabpanel" aria-labelledby="settings-tab">
+    <div class="row">
+        <div class="col-sm-6 col-md-4"> <!-- 1 colone en résolution smatphone, 2 colonnes en résolution tablette, 3 colonnes en résolution desktop  -->
+            <div class="card">
+                <img class="card-img-top" src="images/d1.png" alt="menu classic">
+                <div>8.90€</div>
+                <div class="card-body">
+                    <h5 class="card-title">Menu Classic</h5>
+                    <p class="card-text">Sandwich: Burger, Salade, Tomate, Cornichon + Frites + Boisson</p>
+                    <a href="#" class="btn btn-order" role="button"> 
+                        <i class="fas fa-cart-arrow-down"></i> 
+                        Commander
+                    </a>
+                </div>
+            </div>
+        </div>
+<div class="col-sm-6 col-md-4"> <!-- 1 colone en résolution smatphone, 2 colonnes en résolution tablette, 3 colonnes en résolution desktop  -->
+        <div class="card">
+            <img class="card-img-top" src="images/d2.png" alt="menu classic">
+            <div>8.90€</div>
+            <div class="card-body">
+                <h5 class="card-title">Menu Classic</h5>
+                <p class="card-text">Sandwich: Burger, Salade, Tomate, Cornichon + Frites + Boisson</p>
+                <a href="#" class="btn btn-order" role="button"> 
+                    <i class="fas fa-cart-arrow-down"></i> 
+                    Commander
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-6 col-md-4"> <!-- 1 colone en résolution smatphone, 2 colonnes en résolution tablette, 3 colonnes en résolution desktop  -->
+        <div class="card">
+            <img class="card-img-top" src="images/d3.png" alt="menu classic">
+            <div>8.90€</div>
+            <div class="card-body">
+                <h5 class="card-title">Menu Classic</h5>
+                <p class="card-text">Sandwich: Burger, Salade, Tomate, Cornichon + Frites + Boisson</p>
+                <a href="#" class="btn btn-order" role="button"> 
+                    <i class="fas fa-cart-arrow-down"></i> 
+                    Commander
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-6 col-md-4"> <!-- 1 colone en résolution smatphone, 2 colonnes en résolution tablette, 3 colonnes en résolution desktop  -->
+        <div class="card">
+            <img class="card-img-top" src="images/d4.png" alt="menu classic">
+            <div>8.90€</div>
+            <div class="card-body">
+                <h5 class="card-title">Menu Classic</h5>
+                <p class="card-text">Sandwich: Burger, Salade, Tomate, Cornichon + Frites + Boisson</p>
+                <a href="#" class="btn btn-order" role="button"> 
+                    <i class="fas fa-cart-arrow-down"></i> 
+                    Commander
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-6 col-md-4"> <!-- 1 colone en résolution smatphone, 2 colonnes en résolution tablette, 3 colonnes en résolution desktop  -->
+        <div class="card">
+            <img class="card-img-top" src="images/d5.png" alt="menu classic">
+            <div>8.90€</div>
+            <div class="card-body">
+                <h5 class="card-title">Menu Classic</h5>
+                <p class="card-text">Sandwich: Burger, Salade, Tomate, Cornichon + Frites + Boisson</p>
+                <a href="#" class="btn btn-order" role="button"> 
+                    <i class="fas fa-cart-arrow-down"></i> 
+                    Commander
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+
+
+</div>
+
+
+
+</body>
+</html>
