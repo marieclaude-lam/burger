@@ -49,7 +49,7 @@
                             echo '<tr>';
                             echo '<td>' . $item['name'] . '</td>';
                             echo '<td>' . $item['description'] . '</td>';
-                            echo '<td>' . $item['price'] . '</td>';
+                            echo '<td>' . number_format((float) $item['price'],2,'.','') . '</td>';
                             echo '<td>' . $item['category'] . '</td>';
                             echo '<td width=340px>';
                                 echo '<a class="btn btn-secondary" href="view.php?id=' .$item['id'].'"><i class="fas fa-eye"></i> Voir</a>';
@@ -61,6 +61,7 @@
                         echo '</tr>';
     
                         }
+                        db::disconnect()
                     ?>
                     
                 </tbody>
