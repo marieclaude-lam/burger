@@ -38,39 +38,31 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <tr>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td width=336px>
-                            <a class="btn btn-secondary" href="view.php"><i class="fas fa-eye"></i> Voir</a>
-                            <a class="btn btn-primary" href="update.php"><i class="fas fa-pencil-alt"></i> Modifier</a>
-                            <a class="btn btn-danger" href="delete.php"><i class="far fa-trash-alt"></i> Supprimer</a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
 
+                    <?php
+                        require "database.php";
+                        $db = db::connect();// on se connecte à la base de donnée
+                        $statement = $db->query('SELECT items.id, items.name, items.description, items.price, categories.name AS category
+                                                 FROM items LEFT JOIN categories ON items.category =categories.id
+                                                 ORDER BY items.id DESC');//on veut afficher les données de notre bd
+                        while($item=$statement->fetch()){
+                            echo '<tr>';
+                            echo '<td>' . $item['name'] . '</td>';
+                            echo '<td>' . $item['description'] . '</td>';
+                            echo '<td>' . $item['price'] . '</td>';
+                            echo '<td>' . $item['category'] . '</td>';
+                            echo '<td width=340px>';
+                                echo '<a class="btn btn-secondary" href="view.php?id=' .$item['id'].'"><i class="fas fa-eye"></i> Voir</a>';
+                                echo "  ";
+                                echo '<a class="btn btn-primary" href="update.php?id=' .$item['id'].'"><i class="fas fa-pencil-alt"></i> Modifier</a>';
+                                echo " ";
+                                echo '<a class="btn btn-danger" href="delete.php?id=' .$item['id'].'"><i class="far fa-trash-alt"></i> Supprimer</a>';
+                            echo'</td>';
+                        echo '</tr>';
+    
+                        }
+                    ?>
+                    
                 </tbody>
             </table>
         </div>
