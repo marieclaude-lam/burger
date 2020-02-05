@@ -2,7 +2,79 @@
     
     $nameError = $descriptionError = $priceError =$categoryError =$imageError =$name =$description = $price = $category = $image = "";
     require 'database.php';
+    if(!empty($_POST)){
+        $name = checkInput($_POST['name']);
+        $description = checkInput($_POST['description']);
+        $price = checkInput($_POST['price']);
+        $category = checkInput($_POST['category']);
+        $image = checkInput($_FILES['image']['name']);
+        $imagePath = "../images/" . basename($image); //le chemin de l'image
+        $imageExtension = pathinfo($imagePath, PATHINFO_EXTENSION);// me donne l'extension de l'image
+        $isSuccess = true;
+        $isUploadSuccess = false;
 
+        if(empty($name)){
+            $nameError = 'Ce champ doit être rempli';
+            $isSuccess = false;
+        }
+
+        if(empty($description)){
+            $descriptionError = 'Ce champ doit être rempli';
+            $isSuccess = false;
+        }
+        if(empty($price)){
+            $priceError = 'Ce champ doit être rempli';
+            $isSuccess = false;
+        }
+        if(empty($category)){
+            $categoryError = 'Ce champ doit être rempli';
+            $isSuccess = false;
+        }
+        if(empty($image)){
+            $imageError = 'Ce champ doit être rempli';
+            $isSuccess = false;
+        }
+        else{
+            $isUploadSuccess = true;
+            if($imageExtension != "jpg" && $imageExtension!="jpeg" && $imageExtension!="png" && $imageExtension!="gif"){
+                $imageError = " Les fichiers autorisés sont: .jpg, jpeg, png, gif.";
+                $isUploadSuccess = false;
+            }
+            if(file_exists($imagePath)){
+                $imageError = "Ce fichier existe déjà!";
+                $isUploadSuccess = false;
+            }
+            if($_FILES['image']['size']>500000){
+                $imageError = "Ce fichier ne doit pas dépasser 500KB.";
+                $isUploadSuccess = false;
+            }
+            if($isUploadSuccess){
+                if(!move_uploaded_file($_FILES["image"]["tmp_name"], $imagePath)){
+                    $imageError = "Il y a eu une erreur lors de l'upload.";
+                    $isUploadSuccess = false;
+                }
+            }
+
+        }
+        if($isSuccess && $isUploadSuccess){
+            $db = db::connect();
+            $statement =$db->prepare("INSERT INTO items (name, description, price, category, image) VALUES( ?, ?, ?, ?, ?)");
+
+            $statement->execute(array($name,$description,$price,$category,$image));
+            db::disconnect();
+            header('Location: index.php');
+
+        }
+
+
+    }
+
+    function checkInput($data){
+        $data = trim($data);
+        $data = stripslashes($data);
+        $data = htmlspecialchars($data);
+        return $data;
+    }
 
 ?>
 
@@ -32,7 +104,7 @@
         <i class="fas fa-utensils"></i>           
     </h1>
     <div class="container admin">
-        <div class="row">
+        <!-- <div class="row"> -->
             <h1><strong>Ajouter un produit</strong></h1>
             <br>
             <!-- action permettra de retourner vers la mm page insert -->
@@ -86,7 +158,7 @@
 
 
             </div>
-        </div>
+        <!-- </div> -->
     </div>
 
 
