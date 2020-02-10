@@ -146,14 +146,12 @@
                     <span class="help-inline"><?php echo $imageError; ?></span>
                 </div>
                 
-            </form>
             <br>
             <div class="form-actions">
                 <button type="submit" class="btn btn-success"> <i class="fas fa-pencil-alt"></i> Ajouter</button>
                 <a class="btn btn-primary" href="index.php"><i class="fas fa-arrow-left"></i> Retour</a>
-
             </div>
-            
+            </form>
         </div>
 
 

@@ -32,7 +32,7 @@
                     <tr>
                     <th scope="col">Nom</th>
                     <th scope="col">Description</th>
-                    <th scope="col">Prix</th>
+                    <th scope="col" width="80px">Prix</th>
                     <th scope="col">Catégorie</th>
                     <th scope="col">Actions</th>
                     </tr>
